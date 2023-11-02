@@ -14,7 +14,7 @@ class CarView extends GetView<CarController> {
         title: const Text('Back'),
         centerTitle: true,
       ),
-      backgroundColor: Color.fromARGB(243, 105, 178, 255),
+      backgroundColor: Color.fromARGB(133, 105, 178, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

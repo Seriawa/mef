@@ -8,24 +8,29 @@ class PayView extends GetView<PayController> {
   const PayView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-      body: SingleChildScrollView(
-        child: Center(
-          child: Container(
-            width: 10,
-            height: 20,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/bimbim.png"),
-                fit: BoxFit.cover,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Back'),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Center(
+            child: Container(width: 1200, height: 650,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("lib/images/bimbim.png"), fit: BoxFit.cover),
+              ),
+              child: const Center(
+                child: Text(
+                  'No MONEY?',
+                  style: TextStyle(fontSize: 50, color: Color.fromARGB(255, 157, 151, 151)),
+                ),
               ),
             ),
-            child: const Column(
-
-            ),
           ),
-        ),
+        ],
       ),
-   );
+    );
   }
 }
